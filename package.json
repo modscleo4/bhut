@@ -1,0 +1,45 @@
+{
+  "name": "bhut",
+  "version": "1.0.0",
+  "description": "BHUT Backend Challenge.",
+  "main": "dist/orchestrator.js",
+  "type": "module",
+  "scripts": {
+    "build": "tspc",
+    "clean": "tsc -b --clean",
+    "dev": "tsx --watch --env-file .env src/server.ts",
+    "start": "node .",
+    "test": "ts-node-esm src/test/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modscleo4/bhut.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Dhiego Cassiano Fogaça Barbosa",
+    "email": "modscleo4@outlook.com"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/amqplib": "^0.10.6",
+    "@types/node": "^22.13.1",
+    "ts-node": "^10.9.2",
+    "ts-patch": "^3.3.0",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.2",
+    "typescript": "5.7.3",
+    "typescript-transform-paths": "^3.5.3"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.5",
+    "midori": "github:modscleo4/midori",
+    "midori-swaggerui": "github:modscleo4/midori-swaggerui",
+    "mongodb": "^6.13.0",
+    "redis": "^4.7.0",
+    "zod": "^3.24.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
